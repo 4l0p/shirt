@@ -7,6 +7,7 @@
 
 :root {
     --page-bg-color: #f5f5f5;
+    --color-font-main: #2071db;
     --font-black: 'Archivo Black';
     --font-narrow: 'Archivo Narrow';
     --page-max-width: 1220px;
@@ -18,6 +19,19 @@ body {
     justify-content: center;
     flex-direction: column;
     font-family: var(--font-narrow);
+}
+
+h1 {
+    font-family: var(--font-black);
+    color: var(--color-font-main) ;
+}
+
+h3 {
+    font-size: 13px;
+}
+
+h4 {
+    font-size: 14px;
 }
 
 .marquee {
@@ -37,7 +51,7 @@ header {
     .logo {
         margin: 1.5rem 0;
         img {
-            width: 300px;
+            max-width: 15rem;
             height: auto;
         }
     }
@@ -61,7 +75,52 @@ article {
 
 .main-photo {
     img {
-        max-width: 23.75rem;
+        max-width: 22.5rem;
         height: auto;
+    }
+}
+
+.main-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 5px;
+    .main-info__title {
+        .main-info__stars {
+            display: flex;
+            align-items: center;
+            gap: 0.1rem;
+            img {
+                height: 0.7rem;
+            }
+            span {
+                color: grey;
+                font-size: 12px;
+            }
+        }
+    }
+    .main-info__price {
+        .main-info__price--dashed {
+            h5 {
+                text-decoration: line-through;
+                color: rgb(172, 172, 172);
+            }
+        }
+
+        .main-info__price--real {
+            color: var(--color-font-main);
+            font-family: var(--font-black);
+        }
+
+        .main-info__price--card {
+            h3 {
+                color: grey;
+            }
+        }
+    }
+    .main-info__presentation {
+        p {
+            color: rgb(100, 100, 100);
+        }
     }
 }
