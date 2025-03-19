@@ -8,6 +8,7 @@
 :root {
     --page-bg-color: #f5f5f5;
     --color-font-main: #2071db;
+    --color-title-section: #737373;
     --font-black: 'Archivo Black';
     --font-narrow: 'Archivo Narrow';
     --page-max-width: 1220px;
@@ -160,18 +161,71 @@ article {
             display: flex;
             justify-content: center;
             width: 100%;
+        }
+    }
+}
 
-            .payment__button {
+button {
+    font-family: var(--font-black);
+    font-size: 1.2rem;
+    background-color: #4caf50 ;
+    border: none;
+    border-radius: 40px;
+    border-bottom: 4px solid #7ed957;
+    color: #fff;
+    padding: 10px 40px;
+}
 
-                button {
-                    font-family: var(--font-black);
-                    font-size: 1.2rem;
-                    background-color: #4caf50 ;
-                    border: none;
-                    border-radius: 10px;
-                    color: #fff;
-                    padding: 1rem;
+section {
+   margin-top: 2rem;
+
+    .sections {
+
+        .section-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .photo {
+                display: flex;
+                justify-content: space-around;
+                
+                img {
+                    width: 180px;
+                    height: auto;
                 }
+            }
+
+            .info {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 1rem;
+
+                .title {
+                    font-family: var(--font-black);
+                    font-size: 1.5rem;
+                    color: var(--color-title-section);
+                    text-align: center;
+                }
+
+                .text {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+
+                    div {
+                        width: 250px;
+                        text-align: center;
+                        color: #737373;
+                    }
+                }
+
+                .buy {
+                    display: flex;
+                    justify-content: center;
+                }
+                
             }
         }
     }
