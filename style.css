@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    font-family: var(--font-narrow);
 }
 
 .marquee {
@@ -50,7 +51,6 @@ main {
 
 .page {
     max-width: var(--page-max-width);
-    border: 1px solid black;
 }
 
 article {
@@ -61,7 +61,7 @@ article {
 
 .main-photo {
     img {
-        width: 380px;
+        max-width: 23.75rem;
         height: auto;
     }
 }
