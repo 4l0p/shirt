@@ -25,6 +25,7 @@ body {
 }
 
 h1 {
+    font-size: 18px;
     font-weight: 500;
     color: var(--color-font-main);
 }
@@ -35,12 +36,12 @@ h3 {
 
 h4 {
     font-family: var(--font-small);
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-p{
+p {
     font-family: var(--font-small);
     font-size: 12px;
 }
@@ -72,6 +73,7 @@ header {
 
     .logo {
         margin: 1.5rem 0;
+
         img {
             max-width: 15rem;
             height: auto;
@@ -80,7 +82,7 @@ header {
 }
 
 main {
-    
+
     display: flex;
     justify-content: center;
 }
@@ -105,8 +107,9 @@ article {
 .main-info {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    padding: 0 5px;
+    gap: 1.5rem;
+    padding: 0 20px;
+
     .main-info__title {
         display: flex;
         flex-direction: column;
@@ -116,9 +119,11 @@ article {
             display: flex;
             align-items: center;
             gap: 0.1rem;
+
             img {
                 height: 0.7rem;
             }
+
             span {
                 font-family: var(--font-small);
                 color: var(--color-font-secundary);
@@ -126,6 +131,7 @@ article {
             }
         }
     }
+
     .main-info__price {
         .main-info__price--dashed {
             h5 {
@@ -140,15 +146,22 @@ article {
         .main-info__price--real {
             color: var(--color-font-main);
             font-family: var(--font-number);
-            font-size: 15px;
+            font-size: 13px;
         }
 
         .main-info__price--card {
             h3 {
                 font-family: var(--font-number);
+                font-size: 11px;
                 font-weight: 100;
                 color: var(--color-font-main);
             }
+        }
+    }
+
+    .main-info__presentation {
+        p {
+            font-size: 11px;
         }
     }
 
@@ -173,16 +186,17 @@ article {
 
             .options--sizes__numbers {
                 display: flex;
-                gap: 0.5rem;
+                gap: 12px;
+
                 .size {
                     display: grid;
                     place-items: center;
                     font-family: var(--font-small);
-                    font-size: 16px;
-                    font-weight: 600;
-                    border: 1px solid var(--color-font-main);
-                    height: 40px;
-                    width: 40px;
+                    font-size: 10px;
+                    border: 1px solid var(--color-font-secundary);
+                    border-radius: 3px;
+                    height: 44px;
+                    width: 44px;
                 }
             }
         }
@@ -199,7 +213,7 @@ button {
     font-family: var(--font-small);
     font-size: 14px;
     text-transform: uppercase;
-    background-color: var(--color-font-main) ;
+    background-color: var(--color-font-main);
     border: none;
     border-bottom: 4px solid #35a6da;
     color: #fff;
@@ -207,25 +221,48 @@ button {
 }
 
 section {
-   margin-top: 2rem;
-   padding: 5px 0;
+    margin-top: 2rem;
+    padding: 5px 0;
 
     .sections {
+
+        .photo {
+            display: flex;
+            justify-content: space-around;
+
+            img {
+                width: 180px;
+                height: auto;
+            }
+        }
+
+        .title {
+            font-family: var(--font-texts);
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--color-font-main);
+            text-align: center;
+        }
+
+        .text {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            div {
+                font-family: var(--font-small);
+                font-size: 16px;
+                line-height: 1.5;
+                width: 250px;
+                text-align: center;
+                color: grey;
+            }
+        }
 
         .section-1 {
             display: flex;
             flex-direction: column;
             gap: 1rem;
-
-            .photo {
-                display: flex;
-                justify-content: space-around;
-                
-                img {
-                    width: 180px;
-                    height: auto;
-                }
-            }
 
             .info {
                 display: flex;
@@ -233,34 +270,20 @@ section {
                 flex-direction: column;
                 gap: 1rem;
 
-                .title {
-                    font-family: var(--font-texts);
-                    font-size: 1.5rem;
-                    font-weight: 500;
-                    color: var(--color-font-main);
-                    text-align: center;
-                }
-
-                .text {
-                    display: flex;
-                    justify-content: center;
-                    width: 100%;
-                    div {
-                        font-family: var(--font-small);
-                        font-size: 16px;
-                        line-height: 1.5;
-                        width: 250px;
-                        text-align: center;
-                        color: grey;
-                    }
-                }
-
                 .buy {
                     display: flex;
                     justify-content: center;
                 }
-                
+
             }
         }
+
+        .section-2 {
+            .photo {
+                justify-content: center;
+            }
+        }
+
     }
+
 }
