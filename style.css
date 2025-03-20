@@ -213,6 +213,7 @@ article {
 }
 
 button {
+    cursor: pointer;
     font-family: var(--font-small);
     font-size: 11px;
     letter-spacing: 2px;
@@ -220,9 +221,15 @@ button {
     text-transform: uppercase;
     background-color: var(--color-font-main);
     border: none;
-    border-bottom: 3px solid #35a6da;
     color: #fff;
     padding: 15px 40px;
+    transition: all .5s ease;
+    outline: 0;
+}
+
+button:hover {
+    border-bottom: 4px solid #35a6da;
+    background-color: #062c55;
 }
 
 section {
