@@ -10,7 +10,7 @@
     --color-font-main: #041e3a;
     --color-font-secundary: #475b80;
     --font-texts: "IBM Plex Serif", serif;
-    --font-small: "Open Sans", sans-serif;
+    --font-small: Helvetica, sans-serif;
     --font-number: "Gidole", sans-serif;
     --page-max-width: 1220px;
 }
@@ -214,7 +214,7 @@ article {
 
 button {
     font-family: var(--font-small);
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 2px;
     width: 100%;
     text-transform: uppercase;
