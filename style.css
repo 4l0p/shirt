@@ -98,6 +98,8 @@ article {
 }
 
 .main-photo {
+    background-color: #ffffff;
+    border-radius: 5px;
     img {
         max-width: 22.5rem;
         height: auto;
@@ -109,6 +111,7 @@ article {
     flex-wrap: wrap;
     gap: 1.5rem;
     padding: 0 20px;
+    margin-top: 15px;
 
     .main-info__title {
         display: flex;
