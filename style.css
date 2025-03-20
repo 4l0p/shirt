@@ -51,7 +51,7 @@ span.number {
 
 hr {
     border: none;
-    background-color: #bbbbbb;
+    background-color: #cccccc;
     height: 1px;
     margin: 20px 0;
 }
@@ -130,6 +130,8 @@ article {
         .main-info__price--dashed {
             h5 {
                 font-family: var(--font-number);
+                font-size: 11px;
+                font-weight: normal;
                 text-decoration: line-through;
                 color: rgb(161, 161, 161);
             }
@@ -138,7 +140,7 @@ article {
         .main-info__price--real {
             color: var(--color-font-main);
             font-family: var(--font-number);
-            font-size: 25px;
+            font-size: 15px;
         }
 
         .main-info__price--card {
