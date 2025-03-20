@@ -100,6 +100,7 @@ article {
 .main-photo {
     background-color: #ffffff;
     border-radius: 5px;
+
     img {
         max-width: 22.5rem;
         height: auto;
@@ -147,9 +148,11 @@ article {
         }
 
         .main-info__price--real {
-            color: var(--color-font-main);
-            font-family: var(--font-number);
-            font-size: 13px;
+            h2 {
+                color: var(--color-font-main);
+                font-family: var(--font-number);
+                font-size: 15px;
+            }
         }
 
         .main-info__price--card {
@@ -159,12 +162,6 @@ article {
                 font-weight: 100;
                 color: var(--color-font-main);
             }
-        }
-    }
-
-    .main-info__presentation {
-        p {
-            font-size: 11px;
         }
     }
 
@@ -210,6 +207,42 @@ article {
             width: 100%;
         }
     }
+
+    .main-info__presentation {
+        
+        p {
+            font-family: var(--font-texts);
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: .2px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .main-info__details {
+        width: 100%;
+        border-top: 1px solid #c6c8cc;
+        padding: 10px 0 10px 10px;
+        display: flex;
+        align-items: center;
+        column-gap: 0.9rem;
+        margin-top: -1.5rem;
+                
+        .icon {
+            img {
+                height: 16px;
+                width: auto;
+            }
+        }
+
+        .info {
+            font-family: var(--font-small);
+            font-size: 10px;
+            text-transform: uppercase;
+            width: calc(330px - 4rem);
+        }
+    }
+
 }
 
 button {
