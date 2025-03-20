@@ -186,7 +186,7 @@ article {
 
             .options--sizes__numbers {
                 display: flex;
-                gap: 12px;
+                justify-content: space-between;
 
                 .size {
                     display: grid;
@@ -212,6 +212,7 @@ article {
 button {
     font-family: var(--font-small);
     font-size: 14px;
+    width: 100%;
     text-transform: uppercase;
     background-color: var(--color-font-main);
     border: none;
