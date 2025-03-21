@@ -423,6 +423,68 @@ section {
             }
         }
 
+        h2 {
+            align-self: center;
+        }
+
+        .customers {
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            margin-bottom: 2rem;
+
+            .customer {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                padding: 10px;
+                border-bottom: 1px dashed #e5e9d1;
+
+
+                .customer__photo {
+
+                    img {
+                        height: 70px;
+                        width: auto;
+                        border: 1px solid #e7e7e7;
+                        border-radius: 50%;
+                    }
+                }
+
+                .customer__flex {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+
+                    .customer__stars {
+
+                        img {
+                            height: 12px;
+                            width: auto;
+                        }
+                    }
+
+                    .customer__name {
+                        font-size: 12px;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                    }
+
+                    .customer-comment {
+                        font-family: var(--font-small);
+                        font-size: 10px;
+                        color: #475b80;
+                    }
+
+                }
+    
+            }
+
+            .customer:last-child {
+                border-bottom: none;
+            }
+        }
+
     }
 
 }
