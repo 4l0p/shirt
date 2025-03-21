@@ -209,7 +209,7 @@ article {
     }
 
     .main-info__presentation {
-        
+
         p {
             font-family: var(--font-texts);
             font-size: 13px;
@@ -227,7 +227,7 @@ article {
         align-items: center;
         column-gap: 0.9rem;
         margin-top: -1.5rem;
-                
+
         .icon {
             img {
                 height: 16px;
@@ -267,13 +267,22 @@ button:hover {
 
 section {
     margin-top: 2rem;
-    padding: 5px 0;
+    padding: 5px 20px;
 
     .sections {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
 
         .photo {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
 
             img {
                 width: 180px;
@@ -281,7 +290,15 @@ section {
             }
         }
 
-        .title {
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.7rem;
+            width: 100%;
+        }
+
+        .content__title {
             font-family: var(--font-texts);
             font-size: 1.5rem;
             font-weight: 500;
@@ -289,43 +306,117 @@ section {
             text-align: center;
         }
 
-        .text {
+        .content__hold {
             display: flex;
             justify-content: center;
-            width: 100%;
+            align-self: center;
+            gap: 1rem;
+            max-width: 260px;
 
-            div {
+            .content__hold--icon {
+
+                img {
+                    height: 30px;
+                    width: auto;
+                }
+            }
+
+            .content__hold--text {
                 font-family: var(--font-small);
-                font-size: 16px;
-                line-height: 1.5;
-                width: 250px;
-                text-align: center;
-                color: grey;
+                font-size: 11px;
+
+                span {
+                    font-weight: bold;
+                }
             }
         }
 
-        .section-1 {
+        .content__aval {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .content__aval--stars {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+
+            img {
+                height: 20px;
+                width: auto;
+            }
+        }
+
+        .content__aval--txt {
+            font-family: var(--font-texts);
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            background-color: #f1f1e0;
+            padding: 20px 0;
+            border-radius: 5px;
+        }
+
+        .content__aval--client {
+            font-family: var(--font-small);
+            font-size: 12px;
+            text-align: center;
+
+            .client__name {
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+
+            .client__satisfaction {
+                font-size: 10px;
+            }
+        }
+
+        .content__aval--icon {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            img {
+                height: 80px;
+                width: auto;
+            }
+        }
+
+        .content__subtitle {
+            background-color: #f1f1e0;
+            padding: 15px 0;
+            text-align: center;
+            border-radius: 3px;
+
+            h1 {
+                font-family: var(--font-small);
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+
+        .content_text {
             display: flex;
             flex-direction: column;
             gap: 1rem;
+            font-size: 16px;
+            width: 100%;
+            font-family: var(--font-small);
+            ul {
+                
+                font-size: 13px;
+                font-weight: 500;
+                color: grey;
+                max-width: 250px;
+                align-self: center;
 
-            .info {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                gap: 1rem;
-
-                .buy {
-                    display: flex;
-                    justify-content: center;
+                li {
+                    margin-bottom: 1rem;
                 }
-
-            }
-        }
-
-        .section-2 {
-            .photo {
-                justify-content: center;
             }
         }
 
