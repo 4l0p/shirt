@@ -428,9 +428,6 @@ section {
         }
 
         .customers {
-            background-color: #f3f3f3;
-            border-radius: 5px;
-            margin-bottom: 2rem;
             margin-bottom: 2rem;
 
             .customer {
@@ -438,7 +435,9 @@ section {
                 align-items: center;
                 gap: 1rem;
                 padding: 10px;
-                border-bottom: 1px dashed #e5e9d1;
+                margin-bottom: 0.5rem;
+                border-radius: 5px;
+                background-color: #ececec;
 
 
                 .customer__photo {
@@ -465,15 +464,35 @@ section {
                     }
 
                     .customer__name {
-                        font-size: 12px;
+                        font-size: 11px;
                         font-weight: 700;
-                        text-transform: capitalize;
+                        text-transform: uppercase;
+
+                        display: flex;
+                        align-items: center;
+                        gap: 0.3rem;
+                        line-height: 1;
+
+                        img {
+
+                            height: 14px;
+                            width: auto;
+                        }
+
+                        span {
+                            font-family: var(--font-small);
+                            font-size: 8px;
+                            font-weight: 100;
+                            color: #c5c5c5;
+                            text-transform: capitalize;
+                        }
+
                     }
 
                     .customer-comment {
                         font-family: var(--font-small);
                         font-size: 10px;
-                        color: #475b80;
+                        color: #616161;
                     }
 
                 }
