@@ -556,5 +556,15 @@ footer {
                 margin-right: 0.5rem;
             }
         }
+
+        .cnpj {
+            color: #ffffff;    
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            font-family: var(--font-small);
+            font-size: 12px;
+        }
     }
 }
