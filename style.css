@@ -162,10 +162,6 @@ main {
     }
 }
 
-body.modal__open {
-    overflow: hidden;
-}
-
 article {
     display: flex;
     justify-content: center;
