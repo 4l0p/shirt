@@ -12,9 +12,11 @@ modal.classList.add('hide')
 
 details.forEach((detail) => {
   detail.addEventListener('click', () => {
+    scrollPosition = window.pageYOffset;
     modal.classList.remove('hide')
     modal.classList.add('modal')
     document.body.classList.add('modal__open')
+    document.body.style.top = `-${scrollPosition}px`;
   })
 })
 
@@ -23,6 +25,10 @@ modalClose.forEach((x) => {
     modal.classList.remove('modal')
     modal.classList.add('hide')
     document.body.classList.remove('modal__open')
+    document.body.style.top = '';
+            
+    // Restaura a posição do scroll
+    window.scrollTo(0, scrollPosition);
   })
 })
 
