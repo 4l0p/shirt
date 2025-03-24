@@ -6,6 +6,7 @@ const details = document.querySelectorAll('.main-info__details')
 let sizeSelected;
 console.log(modalClose)
 
+document.body.classList.remove('modal__open')
 modal.classList.remove('modal')
 modal.classList.add('hide')
 
