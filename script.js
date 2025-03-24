@@ -1,6 +1,29 @@
+
 const sizes = document.querySelectorAll('.options--sizes__numbers .size')
-let sizeSelected
-console.log(sizes)
+const modal = document.querySelector('.modal')
+const modalClose = modal.querySelectorAll('.modal__close img')
+const details = document.querySelectorAll('.main-info__details')
+let sizeSelected;
+console.log(modalClose)
+
+modal.classList.remove('modal')
+modal.classList.add('hide')
+
+details.forEach((detail) => {
+  detail.addEventListener('click', () => {
+    modal.classList.remove('hide')
+    modal.classList.add('modal')
+    document.body.classList.add('modal__open')
+  })
+})
+
+modalClose.forEach((x) => {
+  x.addEventListener('click', () => {
+    modal.classList.remove('modal')
+    modal.classList.add('hide')
+    document.body.classList.remove('modal__open')
+  })
+})
 
 function removeSelected() {
   sizes.forEach((size) => {
