@@ -1,0 +1,133 @@
+@media (min-width: 412px) {
+  article {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+
+    .main-photo {
+      background-color: transparent;
+      display: flex;
+      justify-content: end;
+
+      img {
+        height: auto;
+        max-width: 550px;
+      }
+    }
+
+    .main-info {
+      flex-direction: column;
+      max-width: 500px;
+
+      h1 {
+        font-size: 1.7rem;
+      }
+
+      & .main-info__price {
+        & .main-info__price--real {
+          h2 {
+            color: var(--color-font-main);
+            font-family: var(--font-number);
+            font-size: 30px;
+          }
+        }
+      }
+
+      & .main-info__options {
+        & .main-info__options--sizes {
+          .options--sizes__numbers {
+            display: flex;
+            justify-content: start;
+            gap: 1rem;
+          }
+        }
+      }
+
+      .main-info__details {
+        column-gap: 1rem;
+
+        .info {
+          font-family: var(--font-small);
+          font-size: 10px;
+          text-transform: uppercase;
+          width: calc(440px - 4rem);
+        }
+      }
+
+    }
+  }
+
+  section {
+
+    .sections {
+
+      .section {
+        flex-direction: row-reverse;
+        margin: 2rem 0;
+
+        .photo {
+          align-items: center;
+
+          img {
+            width: auto;
+            height: 350px;
+          }
+
+        }
+      }
+
+      .section.reverse {
+        flex-direction: row;
+      }
+
+      .content {
+        max-width: 100%;
+      }
+
+      .content__hold {
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
+        gap: 2rem;
+
+        & .content__hold--icon {
+
+          img {
+            height: 65px;
+            width: auto;
+          }
+        }
+
+        & .content__hold--text {
+          width: 100%;
+          font-size: 20px;
+        }
+      }
+
+
+
+      h1 {
+        font-size: 25px;
+        font-weight: 500;
+        color: var(--color-font-main);
+      }
+
+      & .content__subtitle {
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+      & .content_text {
+        ul {
+          font-size: 18px;
+          font-weight: 700;
+          max-width: 100%;
+        }
+      }
+
+    }
+  }
+}
