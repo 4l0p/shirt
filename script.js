@@ -24,7 +24,6 @@ details.forEach((detail) => {
     window.scrollTo(0, scrollPosition);
     modal.classList.remove('hide')
     modal.classList.add('modal')
-    document.body.classList.add('modal__open')
   })
 })
 
