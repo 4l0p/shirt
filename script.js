@@ -37,6 +37,7 @@ modalClose.forEach((x) => {
             
     // Restaura a posição do scroll
     window.scrollTo(0, scrollPosition);
+    document.body.style.overflow = 'visible';
   })
 })
 
