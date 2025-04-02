@@ -24,6 +24,8 @@ details.forEach((detail) => {
     window.scrollTo(0, scrollPosition);
     modal.classList.remove('hide')
     modal.classList.add('modal')
+    //document.body.style.position = 'fixed';
+    document.body.style.overflow = 'hidden';
   })
 })
 
@@ -32,7 +34,6 @@ modalClose.forEach((x) => {
     modal.classList.remove('modal')
     modal.classList.add('hide')
     document.body.classList.remove('modal__open')
-    document.body.style.top = '';
             
     // Restaura a posição do scroll
     window.scrollTo(0, scrollPosition);
