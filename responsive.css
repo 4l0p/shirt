@@ -194,4 +194,19 @@
 
     }
   }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    .footer__content {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    .cnpj {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
 }
