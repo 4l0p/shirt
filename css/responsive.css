@@ -197,10 +197,16 @@
 
     /*  faq area */
 
+    summary {
+      padding: 5px 20px;
+      vertical-align: middle;
+  }
+
     /* Adiciona ícone personalizado */
     summary::after {
-      top: 1px;
-      right: 5px;
+      top: 0;
+      right: 1px;
+      font-size: 20px;
     }
   }
 

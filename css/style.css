@@ -609,6 +609,7 @@ section {
 
 .faq {
     font-family: var(--font-small);
+    color: #073668;
 }
 
 /* Estilização base para o elemento details */
@@ -630,11 +631,10 @@ details[open] {
 
 /* Estilização do summary */
 summary {
-    padding: 12px 15px;
+    padding: 5px 20px;
     cursor: pointer;
     font-weight: 600;
     text-align: left;
-    color: #333;
     list-style: none; /* Remove o marcador padrão */
     position: relative;
     transition: all 0.2s ease;
