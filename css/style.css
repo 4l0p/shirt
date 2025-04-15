@@ -607,6 +607,10 @@ section {
 
 /* faq area */
 
+.faq {
+    font-family: var(--font-small);
+}
+
 /* Estilização base para o elemento details */
 details {
     border: 1px solid #ddd;
