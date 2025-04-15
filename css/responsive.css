@@ -185,6 +185,7 @@
       & .content_text {
         max-width: 500px;
         align-self: center;
+
         ul {
           font-size: 18px;
           font-weight: 700;
@@ -193,16 +194,26 @@
       }
 
     }
+
+    /*  faq area */
+
+    /* Adiciona ícone personalizado */
+    summary::after {
+      top: 1px;
+      right: 5px;
+    }
   }
 
   footer {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+
     .footer__content {
       flex-direction: row;
       justify-content: space-evenly;
     }
+
     .cnpj {
       flex-direction: column;
       text-align: center;
