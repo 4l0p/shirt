@@ -1,8 +1,5 @@
 
 const sizes = document.querySelectorAll('.options--sizes__numbers .size')
-const modal = document.querySelector('.modal')
-const modalClose = modal.querySelectorAll('.modal__close img')
-const details = document.querySelectorAll('.main-info__details')
 const buttonBuy = document.querySelector('button')
 
 let scrollPosition = 0;
@@ -11,35 +8,6 @@ let selectedCode = 1;
 let selectedQuantity = 1;
 let selectedPrice = 99.90;
 let selectedDescription = 'Kit 2 Camisas Urban Flex Jeans'
-
-
-document.body.classList.remove('modal__open')
-modal.classList.remove('modal')
-modal.classList.add('hide')
-
-details.forEach((detail) => {
-  detail.addEventListener('click', () => {
-    scrollPosition = window.pageYOffset;
-    document.body.style.top = `-${scrollPosition}px`;
-    window.scrollTo(0, scrollPosition);
-    modal.classList.remove('hide')
-    modal.classList.add('modal')
-    //document.body.style.position = 'fixed';
-    document.body.style.overflow = 'hidden';
-  })
-})
-
-modalClose.forEach((x) => {
-  x.addEventListener('click', () => {
-    modal.classList.remove('modal')
-    modal.classList.add('hide')
-    document.body.classList.remove('modal__open')
-            
-    // Restaura a posição do scroll
-    window.scrollTo(0, scrollPosition);
-    document.body.style.overflow = 'visible';
-  })
-})
 
 function removeSelected() {
   sizes.forEach((size) => {
