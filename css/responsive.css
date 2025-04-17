@@ -115,7 +115,6 @@
           width: calc(440px - 4rem);
         }
       }
-
     }
   }
 
@@ -221,8 +220,7 @@
     }
 
     .cnpj {
-      flex-direction: column;
-      text-align: center;
+     text-align: center;
     }
   }
 
