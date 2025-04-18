@@ -541,7 +541,6 @@ section {
             flex-direction: column;
             justify-content: center;
             margin-bottom: 2rem;
-            width: 100%;
 
             .customer {
                 display: flex;

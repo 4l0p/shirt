@@ -194,10 +194,8 @@
 
       .customers {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         margin-bottom: 2rem;
-        width: 100%;
 
         .customer {
           display: flex;
@@ -225,7 +223,7 @@
             .customer__img {
 
               img {
-                max-width: 100%;
+                max-width: 13rem;
                 height: auto;
               }
             }
