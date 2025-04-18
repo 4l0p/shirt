@@ -537,17 +537,22 @@ section {
         }
 
         .customers {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             margin-bottom: 2rem;
+            width: 100%;
 
             .customer {
                 display: flex;
                 align-items: center;
+                align-self: center;
                 gap: 0.5rem;
                 padding: 8px;
                 margin-bottom: 0.4rem;
                 border-radius: 5px;
-                background-color: #ececec;
-
+                background-color: #F9F9F9;
+                max-width: 39rem;
 
                 .customer__photo {
 
@@ -581,6 +586,21 @@ section {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
+
+                        .customer__identify {
+                            display: flex;
+                            flex-direction: column;
+
+                            .client__name {
+                                color: #3a6f92;
+                            }
+
+                            .client__city {
+                                font-family: var(--font-small);
+                                color: #6e6e6e;
+                                text-transform: none;
+                            }
+                        }
 
                         div {
 
