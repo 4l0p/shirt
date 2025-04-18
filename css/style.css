@@ -631,6 +631,14 @@ section {
                         color: #8b8b8b;
                     }
 
+                    .customer__img {
+                        text-align: center;
+                        img {
+                            max-width: 20rem;
+                            max-height: auto;
+                        }
+                    }
+
                 }
 
             }
