@@ -549,7 +549,8 @@ section {
                 gap: 1rem;
                 padding: 8px;
                 margin-bottom: 0.4rem;
-                background-color: #F9F9F9;
+                background-color: #fff;
+                border-radius: 5px;
 
                 .customer__photo {
                     display: flex;
@@ -588,7 +589,7 @@ section {
                             }
     
                             .client__city {
-                                font-family: var(--font-small);
+                                font-family: var(--font-number);
                                 color: #6e6e6e;
                                 text-transform: none;
                             }
@@ -638,14 +639,31 @@ section {
 
                 .customer-comment {
                     font-family: var(--font-small);
-                    font-size: 10px;
+                    font-size: 12px;
                     color: #8b8b8b;
+                }
+
+                .customer__like {
+
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+
+                    img {
+                        width: 18px;
+                        height: auto;
+                    }
+
+                    span {
+                        font-family: var(--font-small);
+                        font-size: 10px;
+                    }
                 }
 
                 .customer__img {
 
                     img {
-                        max-width: 5rem;
+                        max-width: 3.75rem;
                         height: auto;
                     }
                 }

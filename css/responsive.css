@@ -203,7 +203,7 @@
           align-self: center;
           margin-bottom: 0.4rem;
           border-radius: 5px;
-          background-color: #F9F9F9;
+          background-color: #fff;
 
           .customer__photo {
             padding: 0.5rem;
@@ -228,6 +228,13 @@
             .customer-comment {
               font-size: 15px;
             }
+
+            
+            .customer__like {
+                    
+              font-size: var(--font-small);
+
+          }
 
           }
 
