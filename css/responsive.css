@@ -2,6 +2,7 @@
 
   .page {
     max-width: var(--page-max-width);
+    margin-bottom: 3rem;
   }
 
   .modal {
