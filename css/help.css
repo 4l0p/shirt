@@ -177,6 +177,10 @@ footer {
                 color: #ffffff;
                 text-decoration: none;
             }
+            
+            a:hover {
+                text-decoration: underline;
+            }
         }
 
         .footer__content--payments {
