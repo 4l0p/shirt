@@ -115,14 +115,17 @@ details.forEach((detail, index) => {
     if(index === 0) {
       modalTitle.innerText = "Detalhes do Produto";
       modalContent.innerHTML = content.details;
+
     }
     if(index === 1) {
       modalTitle.innerText = "Medidas";
       modalContent.innerHTML = content.measure;
+
     }
     if(index === 2) {
       modalTitle.innerText = "Opções de Pagamento";
       modalContent.innerHTML = content.payment;
+
     }
     console.log(`Item clicado: ${e.target.textContent}`)
     console.log(`index: ${index} `)
