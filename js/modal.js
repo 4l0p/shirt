@@ -75,10 +75,27 @@ const content = {
                         </tr>
                     </tbody>
                 </table>`,
-  delivery: `<div class='modal__text--title'>
-              informações
+  payment: `<div class="modal__payments">
+              <div class='modal__text--title'>
+                cartões de crédito
+              </div>
+              <ul>
+                <li> <img src='../assets/visa_modal.png'> Visa </li>
+                <li> <img src='../assets/master_modal.png'> Master Card </li>
+                <li> <img src='../assets/elo_modal.png'> Elo </li>
+              </ul>
+              <div class='modal__text--title'>
+                Outras opções de pagamentos
+              </div>
+              <ul>
+                <li> <img src='../assets/pix.png'> Pix </li>
+              </ul>
+              <p>
+                Tenha em atenção que termos e condições de terceiros podem aplicar-se no caso de Formas de pagamento adicionais. 
+                Certifique-se de que lê estes termos cuidadosamente na finalização da compra antes de utilizar Formas de pagamentos adicionais.
+              </p>
             </div>
-            conteudo do frete`
+  `
 }
 
 
@@ -103,8 +120,8 @@ details.forEach((detail, index) => {
       modalContent.innerHTML = content.measure;
     }
     if(index === 2) {
-      modalTitle.innerText = "Frete e Devolução";
-      modalContent.innerHTML = content.delivery;
+      modalTitle.innerText = "Opções de Pagamento";
+      modalContent.innerHTML = content.payment;
     }
     console.log(`Item clicado: ${e.target.textContent}`)
     console.log(`index: ${index} `)
