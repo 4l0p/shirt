@@ -83,6 +83,7 @@ const content = {
                 <li> <img src="./assets/visa_modal.png"> Visa </li>
                 <li> <img src="./assets/master_modal.png"> Master Card </li>
                 <li> <img src="./assets/elo_modal.png"> Elo </li>
+                <li> <img src="./assets/amex_modal.png"> American Express </li>
               </ul>
               <div class="modal__text--title">
                 Outras opções de pagamentos
