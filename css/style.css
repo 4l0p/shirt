@@ -162,8 +162,8 @@ main {
                     gap: 1rem;
 
                     img {
-                        height: 20px;
-                        width: auto;
+                        /* height: 20px;
+                        width: auto; */
                         border: 1px solid #e0e0e0;
                     }
 
