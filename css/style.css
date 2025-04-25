@@ -67,6 +67,10 @@ hr {
     padding: 0.5rem;
 }
 
+.float-desk {
+    display: none;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -301,6 +305,7 @@ article {
             .options--sizes__numbers {
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
 
                 .size {
                     display: grid;
@@ -391,7 +396,6 @@ button {
     background-color: var(--color-font-main);
     border: none;
     color: #fff;
-    line-height: .875rem;
     padding: 19px 24px;
     outline: 0;
     transition: all .5s ease;
