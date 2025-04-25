@@ -15,7 +15,7 @@
     gap: 1.5rem;
     background-color: #f5f5f5;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .15);
-    transition: all 0.3s ease;
+    transition: all 1s ease;
 
     .float-desk__img {
       img {
@@ -72,15 +72,6 @@
     }
   }
 
-  .elemento-que-aparece {
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  #elemento-que-aparece.mostrar {
-    display: flex;
-    opacity: 1;
-  }
 
   .modal {
     background-color: rgba(0, 0, 0, 0.5);

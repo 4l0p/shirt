@@ -1,4 +1,5 @@
-const elementoAlvo = document.getElementById('elemento-que-aparece');
+const elementoAlvo = document.querySelector('.float-desk');
+// const elementoAlvo = document.getElementById('elemento-que-aparece');
 const elementoMarcador = document.getElementById('elemento-referencia');
 
 const observer = new IntersectionObserver((entries) => {

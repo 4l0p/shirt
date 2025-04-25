@@ -396,7 +396,7 @@ button {
     background-color: var(--color-font-main);
     border: none;
     color: #fff;
-    padding: 19px 24px;
+    padding: 20px 24px;
     outline: 0;
     transition: all .5s ease;
 }
