@@ -88,7 +88,7 @@ const content = {
                 Outras opções de pagamentos
               </div>
               <ul>
-                <li> <img src="./assets/pix.png"> Pix </li>
+                <li> <img src="./assets/pix_modal.png"> Pix </li>
               </ul>
               <p>
                 Tenha em atenção que termos e condições de terceiros podem aplicar-se no caso de Formas de pagamento adicionais. 
