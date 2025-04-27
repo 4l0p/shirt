@@ -406,6 +406,18 @@ button:hover {
     transition: all 1s ease;
 }
 
+.float-mobile__button {
+    position: fixed;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    transform: all 2s ease;
+
+    button {
+        padding: 30px 0;
+    }
+}
+
 section {
     margin-top: 2rem;
     padding: 5px 20px;
