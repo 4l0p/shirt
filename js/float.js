@@ -22,17 +22,3 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 observer.observe(elementoMarcador);
-
-// //mover a pagina para seção de comprar
-// document.getElementById('addToBag').addEventListener('click', () => {
-//   document.getElementsByClassName('main-photo')[0].scrollIntoView({ behavior: 'smooth' })
-// })
-
-// Scroll para seção de comprar - versão corrigida
-document.getElementById('addToBag')?.addEventListener('click', (e) => {
-  e.preventDefault(); // Previne comportamento padrão se for um link
-  document.getElementsByTagName('body')[0].scrollIntoView({ 
-    behavior: 'smooth',
-    block: 'start' // Alinha ao topo da viewport
-  });
-});
