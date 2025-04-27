@@ -407,6 +407,7 @@ button:hover {
 }
 
 .float-mobile__button {
+    display: none;
     position: fixed;
     bottom: -1px;
     left: 0;
