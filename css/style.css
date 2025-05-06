@@ -354,13 +354,13 @@ article {
         align-items: center;
         column-gap: 0.9rem;
         margin-top: -1.5rem;
-        transition: all 1s;
 
         .icon {
             img {
                 display: inline-block;
                 height: 16px;
                 width: auto;
+                transition: transform 0.2s ease;
             }
         }
 
@@ -403,20 +403,23 @@ button {
 
 button:hover {
     background-color: #073668;
-    transition: all 1s ease;
 }
 
-.float-mobile__button {
-    display: none;
+.float-button {
     position: fixed;
     bottom: -1px;
     left: 0;
     width: 100vw;
-    transition: all 2s ease;
+    opacity: 0;
+    transition: opacity 0.4s ease;
 
     button {
         padding: 30px 0;
     }
+}
+
+.float-button.show {
+ opacity: 1;
 }
 
 section {

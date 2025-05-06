@@ -15,8 +15,9 @@
     gap: 1.5rem;
     background-color: #f5f5f5;
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .15);
-    transition: all 1s ease;
-
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    
     .float-desk__img {
       img {
         height: 67px;
@@ -70,6 +71,14 @@
         height: 100%;
       }
     }
+  }
+
+  .float-desk.show {
+    opacity: 1;
+  }
+
+  .float-button {
+    display: none;
   }
 
 

@@ -1,18 +1,18 @@
 const elementoAlvo = document.querySelector('.float-desk');
-const elementoAlvoMobile = document.querySelector('.float-mobile__button');
+const floatBtn = document.querySelector('.float-button');
 const elementoMarcador = document.getElementById('elemento-referencia');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     // Quando o marcador começa a sair da viewport pelo topo (rolagem para baixo)
     if (entry.boundingClientRect.top < 0) {
-      elementoAlvo.style.display = 'flex';
-      elementoAlvoMobile.style.display = 'block'
+      floatBtn.classList.add('show')
+      elementoAlvo.classList.add('show')
     } 
     // Quando o marcador está totalmente visível novamente (rolagem para cima)
     else if (entry.isIntersecting && entry.boundingClientRect.top >= 0) {
-      elementoAlvo.style.display = 'none';
-      elementoAlvoMobile.style.display = 'none';
+      floatBtn.classList.remove('show')
+      elementoAlvo.classList.remove('show')
     }
   });
 }, {
