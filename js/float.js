@@ -1,6 +1,6 @@
 const elementoAlvo = document.querySelector('.float-desk');
 const floatBtn = document.querySelector('.float-button');
-const elementoMarcador = document.getElementById('elemento-referencia');
+const referenceElement = document.getElementById('main-button');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -21,4 +21,4 @@ const observer = new IntersectionObserver((entries) => {
   threshold: [0, 1] // Observa quando entra/sai completamente
 });
 
-observer.observe(elementoMarcador);
+observer.observe(referenceElement);

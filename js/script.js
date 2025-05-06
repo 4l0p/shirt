@@ -1,6 +1,8 @@
 
 const sizes = document.querySelectorAll('.options--sizes__numbers .size')
-const buttonBuy = document.querySelector('button')
+const mainButton = document.getElementById('main-button')
+const deskButton = document.getElementById('desk-button')
+const mobileButton = document.getElementById('mobile-button')
 
 let scrollPosition = 0;
 let sizeSelected = 'M'
@@ -36,29 +38,39 @@ function generatesJSON() {
     description: selectedDescription
   }
 
-  const jsonProduct = JSON.stringify(product, null, 2)
+  if (product.size == '') {
+    alert('Selecione o Tamanho!')
+  } else {
 
-  console.log(jsonProduct)
+    const jsonProduct = JSON.stringify(product, null, 2)
 
-  const blob = new Blob([jsonProduct], { type: 'application/json' })
+    console.log(jsonProduct)
 
-  const url = URL.createObjectURL(blob)
-  window.open(url, '_blank')
+    const blob = new Blob([jsonProduct], { type: 'application/json' })
 
-  //forma se quiser fazer o download do arquivo json
-  // const link = document.createElement('a')
-  // link.href = url
-  // link.download = 'product.json'
+    const url = URL.createObjectURL(blob)
+    window.open(url, '_blank')
 
-  // document.body.appendChild(link)
-  // link.click()
+    //forma se quiser fazer o download do arquivo json
+    // const link = document.createElement('a')
+    // link.href = url
+    // link.download = 'product.json'
 
-  // document.body.removeChild(link)
-  // URL.revokeObjectURL(url)
+    // document.body.appendChild(link)
+    // link.click()
+
+    // document.body.removeChild(link)
+    // URL.revokeObjectURL(url)
+
+  }
 }
 
-buttonBuy.addEventListener('click', () => {
-  generatesJSON()
+buttonBuy = [mainButton, deskButton]
+
+buttonBuy.forEach((buttonTarget) => {
+  buttonTarget.addEventListener('click', () => {
+    generatesJSON()
+  })
 })
 
 // //mover a pagina para seção de comprar
@@ -67,9 +79,9 @@ buttonBuy.addEventListener('click', () => {
 // })
 
 // Scroll para seção de comprar - versão corrigida
-document.getElementById('addToBag')?.addEventListener('click', (e) => {
+mobileButton.addEventListener('click', (e) => {
   e.preventDefault(); // Previne comportamento padrão se for um link
-  document.getElementsByTagName('body')[0].scrollIntoView({ 
+  document.getElementsByTagName('body')[0].scrollIntoView({
     behavior: 'smooth',
     block: 'start' // Alinha ao topo da viewport
   });
